@@ -1,8 +1,8 @@
-Miss Jarvis
+# Miss Jarvis
 
 Miss Jarvis is a voice assistant app developed using Flutter and Dart. The app integrates speech recognition and text-to-speech technologies, allowing users to interact with the application through voice commands.
 
-Features
+# Features
 Voice Commands: Execute commands and retrieve information using natural language processing.
 Text-to-Speech: The app reads aloud responses to user queries, enhancing accessibility.
 User-Friendly Interface: Designed for easy navigation and interaction.
@@ -14,7 +14,7 @@ Text-to-Speech API: For reading out responses.
 Getting Started
 To get a local copy up and running, follow these steps:
 
-Clone the repository:
+# Clone the repository:
 
 bash
 Copy code
@@ -34,9 +34,10 @@ Run the app:
 bash
 Copy code
 flutter run
-Contributing
+
+# Contributing
 Contributions are welcome! Please open an issue or submit a pull request.
 
-License
+# License
 This project is licensed under the MIT License. See the LICENSE file for details.
 
