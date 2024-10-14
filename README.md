@@ -1,4 +1,4 @@
-##Miss Jarvis
+Miss Jarvis
 
 Miss Jarvis is a voice assistant app developed using Flutter and Dart. The app integrates speech recognition and text-to-speech technologies, allowing users to interact with the application through voice commands.
 
@@ -18,7 +18,7 @@ Clone the repository:
 
 bash
 Copy code
-git clone https://github.com/yourusername/miss-jarvis.git
+git clone https://github.com/sjgod1427/miss-jarvis.git
 Navigate to the project directory:
 
 bash
