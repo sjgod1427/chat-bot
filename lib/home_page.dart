@@ -1557,7 +1557,7 @@ class _HomePageState extends State<HomePage> {
     b_title = "assets/images/giphy.webp";
     jarvis = const AssetImage("assets/images/jarvis_2.gif");
     j_title = "assets/images/jarvis_2.gif";
-    flutterTts.speak("Good Morning , What task can I do for You");
+    flutterTts.speak("Hello , What task can I do for You");
   }
 
   Future<void> initTextToSpeech() async {
@@ -1607,20 +1607,21 @@ class _HomePageState extends State<HomePage> {
     setState(() {});
   }
 
-  void _changeBackground() {
-    if (b_title == "assets/images/giphy.webp")
-      setState(() {
+  void _changeBackground() async {
+    // Trigger the system speak outside of setState
+    await systemSpeak("Theme changed");
+
+    setState(() {
+      if (b_title == "assets/images/giphy.webp") {
         background = const AssetImage("assets/images/background_jarvis.gif");
         b_title = "assets/images/background_jarvis.gif";
         jarvis = const AssetImage("assets/images/jarvis.gif");
-      });
-    else {
-      setState(() {
+      } else {
         background = const AssetImage("assets/images/giphy.webp");
-        b_title = "assets/images/gify.webp";
+        b_title = "assets/images/giphy.webp";
         jarvis = const AssetImage("assets/images/jarvis_2.gif");
-      });
-    }
+      }
+    });
   }
 
   Future<void> _toggleVoice() async {
